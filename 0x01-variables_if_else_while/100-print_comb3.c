@@ -1,6 +1,7 @@
-#include <stdio.h>
+# include <stdio.h>
+
 /**
- * main - a program that prints all possible different combinations of two digit
+ * main - print all possible different combinations of two digits
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -13,8 +14,8 @@ int main(void)
 		{
 			if (m > n)
 			{
-				putchar(m);
 				putchar(n);
+				putchar(m);
 				if (n != 56 || m != 57)
 				{
 					putchar(',');
@@ -26,3 +27,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
