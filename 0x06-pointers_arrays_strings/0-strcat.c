@@ -6,24 +6,20 @@
  * @src: A pointer for character to be changed
  * Return: dest
  */
-
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i = 0, j = 0;
+	char *p;
 
-	i = 0;
-	j = 0;
-	
-	while (dest[i]  != '\0')
+	while (*(dest + i) != '\0')
 		i++;
-	
-	while (src[j] != '\0')
+	while (*(src + j) != '\0')
 	{
-		dest[i] = src[j];
-		j++;
+		*(dest + i) = *(src + j);
 		i++;
+		j++;
 	}
-	dest[i] = '\0';
-	
-	return (dest);
+	*(dest + i) = '\0';
+	p = dest;
+	return (p);
 }
