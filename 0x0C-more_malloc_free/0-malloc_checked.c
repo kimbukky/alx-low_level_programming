@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * malloc_checked - allocates memory using malloc
- * @c: number of bytes allocated
+ * @b: number of bytes allocated
  * Return: a pointer to the allocated memory
  */
-void *malloc_checked(unsigned int c)
+void *malloc_checked(unsigned int b)
 {
 	void *ptrtomem;
 
-	ptrtomem = malloc(c);
+	ptrtomem = malloc(b);
 	if (ptrtomem == NULL)
 		exit(98);
 	return (ptrtomem);
